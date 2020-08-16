@@ -2,4 +2,21 @@
     <string name="app_name">DogPaw</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps3">Map</string>
+    <string name="title_activity_maps4">Map</string>
+    <string name="driver_name">name</string>
+    <string name="driver_phoneno">Phone number</string>
+    <string name="driver_vehicle_type">Vehicle Type</string>
+    <string name="driver_Email">Email</string>
+    <string name="driver_password">Password</string>
+    <string name="driver_login_email">Email</string>
+    <string name="driver_login_password">Password</string>
+    <string name="driver_register_name">K.P.W.Amaraweera</string>
+    <string name="driver_register_phoneno">0772345678</string>
+    <string name="driver_register_vehicle_type">SUZUKI CELERIO</string>
+    <string name="driver_register_email">amaraweera34@gmail.com</string>
+
+
 </resources>

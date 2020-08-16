@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sm_driver_name" type="id">@id/sm_driver_name</item>
+</resources>
