@@ -55,28 +55,31 @@
         android:textColor="@android:color/background_light"
         android:textSize="15sp"
         android:textStyle="bold" />
+
     <EditText
         android:id="@+id/pick_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:ems="10"
         android:hint="Enter pick - up location"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/Where_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Password..."
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_below="@+id/pick_location"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Where to?"
+        android:textColor="#151414"
+        android:textStyle="bold" />
 
 </RelativeLayout>
