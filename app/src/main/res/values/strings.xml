@@ -2,4 +2,18 @@
     <string name="app_name">DogPaw</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="n_value_type">Rs.</string>
+    <string name="n_payment_massege">Please cash pay this amount on your booked date.</string>
+    <string name="n_photography_first_titls">Dog Photography</string>
+    <string name="n_photography_first_details">Select a Package</string>
+    <string name="n_dog_family">Dog and Family Outside Photographs</string>
+    <string name="n_outside_dog">Outside Dog Photographs</string>
+    <string name="n_dog_studio">Studio Dog Photographs</string>
+    <string name="n_payment_header">Total Payment</string>
+    <string name="n_photography_form_first">Number of dogs needs to be photograph</string>
+    <string name="n_photography_form_second">Breed of the dog</string>
+    <string name="n_photography_form_third">Weight of the dog</string>
+    <string name="n_photography_form_forth">Type of phto needed to be taken</string>
+    <string name="n_photography_fifth">Most preffered time of day</string>
+    <string name="n_photography_six">Final image format</string>
 </resources>

@@ -8,9 +8,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Slide;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import java.util.ArrayList;
@@ -30,21 +34,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawer);
-        mTroggle = new ActionBarDrawerToggle(this,mDrawerlayout,R.string.open,R.string.close);
-        mTroggle = new ActionBarDrawerToggle(this,mDrawerlayout,R.string.open,R.string.close);
+        mTroggle = new ActionBarDrawerToggle(this, mDrawerlayout, R.string.open, R.string.close);
+        mTroggle = new ActionBarDrawerToggle(this, mDrawerlayout, R.string.open, R.string.close);
         mDrawerlayout.addDrawerListener(mTroggle);
         mTroggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
 
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(mTroggle.onOptionsItemSelected(item)){
+        if (mTroggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void sendToPhotography(View view) {
+        Intent intent = new Intent(this, Photography_first.class);
+        Button button = (Button) findViewById(R.id.button6);
+        startActivity(intent);
     }
 }

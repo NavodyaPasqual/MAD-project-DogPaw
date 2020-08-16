@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Photography_first"></activity>
+        <activity android:name=".AdminPhotographyAdd"></activity>
+        <activity android:name=".AdminPhotographyUpdate" />
+        <activity android:name=".AdminPhotographyManagemnt" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Photography_second" />
+        <activity android:name=".Photography_first" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

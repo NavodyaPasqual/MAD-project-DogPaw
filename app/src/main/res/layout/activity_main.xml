@@ -5,24 +5,26 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/photo_background"
+    tools:context=".MainActivity"
     tools:ignore="InvalidId">
 
     <com.google.android.material.navigation.NavigationView
-        app:headerLayout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         android:background="@color/white"
-        app:itemTextColor="@color/darkGray"
+        app:headerLayout="@layout/header"
         app:itemIconTint="@color/darkGray"
-        app:menu="@menu/drawermenu"
-        android:layout_gravity="start">
+        app:itemTextColor="@color/darkGray"
+        app:menu="@menu/drawermenu">
 
     </com.google.android.material.navigation.NavigationView>
+
     <ScrollView
         android:layout_width="100dp"
         android:layout_height="200dp">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,8 +69,9 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/bus"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="-7dp"
+                            android:layout_marginTop="-3dp"
                             android:text="Taxi Service"
+                            android:textColor="#000000"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -85,6 +88,7 @@
                             android:layout_height="179dp"
                             android:alpha="0"
                             android:text="Button" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -117,8 +121,9 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/train"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="4dp"
                             android:text="Day Care Service"
+                            android:textColor="#000000"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -130,10 +135,11 @@
 
                         <Button
                             android:id="@+id/button5"
-                            android:layout_width="366dp"
-                            android:layout_height="179dp"
+                            android:layout_width="370dp"
+                            android:layout_height="177dp"
                             android:alpha="0"
                             android:text="Button" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -156,18 +162,19 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="193dp">
+
 
                         <TextView
                             android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
+                            android:layout_width="195dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/airplane"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
-                            android:text="Photography"
+                            android:layout_marginTop="1dp"
+                            android:text="Dog Photography"
+                            android:textColor="#000000"
                             android:textSize="24sp" />
-
 
                         <ImageView
                             android:id="@+id/airplane"
@@ -183,7 +190,9 @@
                             android:layout_width="366dp"
                             android:layout_height="179dp"
                             android:alpha="0"
+                            android:onClick="sendToPhotography"
                             android:text="Button" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
