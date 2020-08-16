@@ -36,65 +36,57 @@
 
         tools:ignore="MissingClass,UnknownId" />
 
-    <Button
-        android:id="@+id/main_join_now_btn"
-        android:layout_width="325dp"
+    <EditText
+        android:id="@+id/kp_map_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="254dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:padding="1dp"
-        android:text="K.P.W.Amaraweera"
-        android:textAllCaps="false"
-        android:textColor="#131313"
-        android:textSize="20sp"
-        android:textStyle="bold"></Button>
+        android:hint="K.P.W.Amaraweer"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/main_join_now1_btn"
-        android:layout_width="325dp"
+    <EditText
+        android:id="@+id/kp_map_phoneno"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="197dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:padding="1dp"
-        android:text="0772345678"
-        android:textAllCaps="false"
-        android:textColor="#1B1A1A"
-        android:textSize="20sp"
-        android:textStyle="bold"></Button>
+        android:hint="0773456789"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/main_join_now2_btn"
-        android:layout_width="325dp"
+    <EditText
+        android:id="@+id/kp_map_vehicaltype"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="140dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:padding="1dp"
-        android:text="SUZUKI CELERIO"
-        android:textAllCaps="false"
-        android:textColor="#0B0A0A"
-        android:textSize="20sp"
-        android:textStyle="bold"></Button>
+        android:hint="SUZUKI CELERIO"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
 
     <Button
         android:id="@+id/update_btn"
@@ -109,7 +101,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="91dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/buttons"
         android:padding="10dp"
         android:text="Confirm"

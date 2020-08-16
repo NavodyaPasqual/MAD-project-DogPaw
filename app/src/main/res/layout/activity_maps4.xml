@@ -20,49 +20,44 @@
         android:layout_marginTop="-3dp"
         android:layout_marginBottom="0dp" />
 
-
-
-
-
-    <Button
-        android:id="@+id/main_join_now_btn"
-        android:layout_width="325dp"
+    <EditText
+        android:id="@+id/kp_cus_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:padding="1dp"
-        android:text="Mr.K.L.Pitigala"
-        android:textAllCaps="false"
-        android:textColor="#131313"
-        android:textSize="20sp"
-        android:textStyle="bold"></Button>
+        android:hint="Mr.X.L.Pitigala"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/main_join_now1_btn"
-        android:layout_width="325dp"
+    <EditText
+        android:id="@+id/kp_cus_phone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="137dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:padding="1dp"
-        android:text="0712345678"
-        android:textAllCaps="false"
-        android:textColor="#1B1A1A"
-        android:textSize="20sp"
-        android:textStyle="bold"></Button>
+        android:hint="0764567890"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
 
     <Button
         android:id="@+id/delete_btn"

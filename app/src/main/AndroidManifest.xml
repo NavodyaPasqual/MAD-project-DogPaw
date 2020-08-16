@@ -32,7 +32,11 @@
         <activity
             android:name=".MapsActivity4"
             android:label="@string/title_activity_maps4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MapsActivity3"
@@ -61,19 +65,11 @@
         </activity>
         <activity android:name=".MainActivity2">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
     </activity>
         <activity android:name=".Photography_first" />
         <activity android:name=".MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
     </activity>
     </application>
 
