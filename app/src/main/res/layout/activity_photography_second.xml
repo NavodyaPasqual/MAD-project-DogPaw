@@ -249,7 +249,7 @@
             android:layout_marginTop="8dp"
             android:background="#12070000"
             android:ems="10"
-            android:inputType="date"
+            android:inputType="textPersonName"
             android:paddingStart="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -286,12 +286,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:background="#795548"
-            android:onClick="sendToPayment"
             android:text="Next"
             android:textColor="@color/white"
             android:textSize="19sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
