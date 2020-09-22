@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendToPhotography(View view) {
-        Intent intent = new Intent(this, Photography_first.class);
+        Intent intent = new Intent(this, PhotographyBooking.class);
         Button button = (Button) findViewById(R.id.button6);
         startActivity(intent);
     }

@@ -28,6 +28,7 @@ public class Photography_second extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photography_second);
         Intent intent = getIntent();
+
         txtNo = findViewById(R.id.editText1);
         txtBreed = findViewById(R.id.editText2);
         txtTime = findViewById(R.id.editText4);
@@ -51,6 +52,9 @@ public class Photography_second extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Photography");
+
+                Intent intent = new Intent(Photography_second.this, Payment.class);
+                startActivity(intent);
 
                 try {
                     if (TextUtils.isEmpty(txtNo.getText().toString()))
@@ -98,7 +102,7 @@ public class Photography_second extends AppCompatActivity {
                         photography.setDate(txtDate.getText().toString().trim());
                         photography.setInfo(txtInfo.getText().toString().trim());
 
-                        dbRef.push().setValue(photography);
+                        //dbRef.push().setValue(photography);
                         dbRef.child("photography1").setValue(photography);
                         Toast.makeText(getApplicationContext(),"Your photography is sucessfully booked.",Toast.LENGTH_SHORT).show();
                         clearControls();
@@ -114,11 +118,10 @@ public class Photography_second extends AppCompatActivity {
 
     }
 
-    /*public void sendToPayment(View view) {
-        Intent intent = new Intent(this, Payment.class);
-        Button button = (Button) findViewById(R.id.button);
-        startActivity(intent);
-    }*/
+
+    public void sendToPayment(View view) {
+
+    }
 
     private void clearControls(){
         txtNo.setText("");
