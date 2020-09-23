@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class MA1 extends AppCompatActivity {
 
     private Button button;
@@ -18,15 +22,21 @@ public class MA1 extends AppCompatActivity {
 
         button = findViewById(R.id.button6);
         button.setOnClickListener(new View.OnClickListener() {
+
+            DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("cus1");
+
             @Override
             public void onClick(View view) {
                 openMA5();
             }
         });
+
     }
 
     public void openMA5(){
         Intent intent = new Intent(this, MA5.class);
         startActivity(intent);
     }
+
+
 }

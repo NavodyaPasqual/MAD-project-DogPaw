@@ -18,44 +18,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="72dp"
-        android:layout_height="41dp"
-        android:background="@android:color/holo_purple"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
-
-
 
     <Button
         android:id="@+id/button6"
         android:layout_width="149dp"
         android:layout_height="42dp"
         android:background="@android:color/holo_green_light"
-        android:text="Change Details"
+        android:text="View Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="149dp"
-        android:layout_height="42dp"
-        android:background="@android:color/holo_green_light"
-        android:text="Delete Account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.825" />
 
     <TextView
         android:id="@+id/textView9"
@@ -64,7 +39,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Hello"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,22 +65,11 @@
         android:layout_height="wrap_content"
         android:text="Your account has been created"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.368" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="133dp"
-        android:layout_height="51dp"
-        android:background="@android:color/holo_green_light"
-        android:text="View Account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

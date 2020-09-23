@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "990552262531",
+    "firebase_url": "https://dogpaw-1645c.firebaseio.com",
+    "project_id": "dogpaw-1645c",
+    "storage_bucket": "dogpaw-1645c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990552262531:android:187b669c8ae3646d0a98b6",
+        "android_client_info": {
+          "package_name": "com.example.dogpaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990552262531-657q25mtnnieqi5o9dr4p48ie6sh1uqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dogpaw",
+            "certificate_hash": "660bebbff4431b490d892718e5b29bcb225ef493"
+          }
+        },
+        {
+          "client_id": "990552262531-u6idh1f1bbtehcdk7ghagb7mfh7mamgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt5XUfHxDBoeaGv1WhwMijkWNd5NZvNmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990552262531-u6idh1f1bbtehcdk7ghagb7mfh7mamgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
