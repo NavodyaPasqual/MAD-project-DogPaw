@@ -22,6 +22,7 @@ public class Photography_second extends AppCompatActivity {
     DatabaseReference dbRef;
     Photography photography;
     Button save;
+    public static final String EXTRA_NUMBER = "com.example.dogpaw.EXTRA_NUMBER";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,11 @@ public class Photography_second extends AppCompatActivity {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Photography");
 
                 Intent intent = new Intent(Photography_second.this, Payment.class);
+
+                //Extra no
+                EditText editText = (EditText) findViewById(R.id.editText1);
+                int number = Integer.parseInt(editText.getText().toString());
+                intent.putExtra(EXTRA_NUMBER, number);
                 startActivity(intent);
 
                 try {
@@ -115,11 +121,6 @@ public class Photography_second extends AppCompatActivity {
             }
         });
 
-
-    }
-
-
-    public void sendToPayment(View view) {
 
     }
 

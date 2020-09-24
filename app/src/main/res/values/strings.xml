@@ -3,13 +3,13 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="n_value_type">Rs.</string>
-    <string name="n_payment_massege">Please cash pay this amount on your booked date.</string>
+    <string name="n_payment_massege">"This payment is calculated according to number of dogs you have to photographed. Amount acccording to final photo format type and number of photoes you need to be taken will added to the total payment. Please cash pay your payment on your booked date. "</string>
     <string name="n_photography_first_titls">Dog Photography</string>
     <string name="n_photography_first_details">Select a Package</string>
     <string name="n_dog_family">Dog and Family Outside Photographs</string>
     <string name="n_outside_dog">Outside Dog Photographs</string>
     <string name="n_dog_studio">Studio Dog Photographs</string>
-    <string name="n_payment_header">Total Payment</string>
+    <string name="n_payment_header">Payment For Booking</string>
     <string name="n_photography_form_first">Number of dogs needs to be photograph</string>
     <string name="n_photography_form_second">Breed of the dog</string>
     <string name="n_photography_form_third">Weight of the dog</string>

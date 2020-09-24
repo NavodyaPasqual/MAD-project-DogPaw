@@ -7,12 +7,13 @@
     android:background="@drawable/payment_back"
     tools:context=".Payment">
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="64dp"
         android:hint="@string/n_payment_header"
         android:textColorHint="#F5F5F5"
         android:textSize="32dp"
@@ -24,7 +25,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="36dp"
         android:hint="@string/n_value_type"
         android:textColorHint="@color/white"
@@ -37,14 +38,14 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="298dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="367dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
         android:hint="@string/n_payment_massege"
+        android:justificationMode="inter_word"
         android:textColorHint="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
+        android:textSize="17dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
@@ -52,26 +53,28 @@
         android:id="@+id/editText1"
         android:layout_width="158dp"
         android:layout_height="43dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="124dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="144dp"
         android:background="#41121010"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="5dp"
         android:text="00000.00"
         android:textColor="@color/white"
+        android:textSize="21dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/button2"
+        android:layout_width="257dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
+        android:background="#DAC1B9BC"
         android:onClick="sendBackToHome"
-        android:text="Submit and Book"
+        android:text="Back to Photography booking"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
