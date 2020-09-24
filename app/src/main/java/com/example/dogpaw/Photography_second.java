@@ -65,8 +65,6 @@ public class Photography_second extends AppCompatActivity {
                 try {
                     if (TextUtils.isEmpty(txtNo.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter number of dogs", Toast.LENGTH_SHORT).show();
-                    else if (TextUtils.isEmpty(txtBreed.getText().toString()))
-                        Toast.makeText(getApplicationContext(), "Please enter breed of the dog", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(txtTime.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter preffered time", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(txtDate.getText().toString()))
@@ -116,7 +114,7 @@ public class Photography_second extends AppCompatActivity {
 
 
                 } catch (NumberFormatException e) {
-                    Toast.makeText(getApplicationContext(), "Invalid input for number of dogs", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Invalid input for number of dogs.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

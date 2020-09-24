@@ -108,7 +108,7 @@ public class ExtendPhotography extends AppCompatActivity {
                     }
                 });
 
-                Intent intent = new Intent(ExtendPhotography.this, MainActivity.class);
+                Intent intent = new Intent(ExtendPhotography.this, PhotographyBooking.class);
                 startActivity(intent);
 
 
@@ -139,7 +139,7 @@ public class ExtendPhotography extends AppCompatActivity {
                     }
                 });
 
-                Intent intent = new Intent(ExtendPhotography.this, Photography_first.class);
+                Intent intent = new Intent(ExtendPhotography.this, PhotographyBooking.class);
                 startActivity(intent);
 
             }
@@ -168,15 +168,4 @@ public class ExtendPhotography extends AppCompatActivity {
         txtType.setText("");
     }
 
-    /*public void sendToHomepage(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        Button button = (Button) findViewById(R.id.button);
-        startActivity(intent);
-    }*/
-
-    /*public void sendToStartPage(View view) {
-        Intent intent = new Intent(this, Photography_first.class);
-        Button button = (Button) findViewById(R.id.button2);
-        startActivity(intent);
-    }*/
 }

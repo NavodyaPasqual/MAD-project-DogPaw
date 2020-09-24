@@ -235,7 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Date to start"
+            android:text="Date to start*"
             android:textColor="#000000"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -285,11 +285,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
-            android:background="#795548"
-            android:text="Next"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit and book"
             android:textColor="@color/white"
             android:textSize="19sp"
-            android:textStyle="bold"
+            android:textStyle="bold|italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText5" />
 

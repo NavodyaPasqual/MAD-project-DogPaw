@@ -9,11 +9,15 @@ import android.widget.Button;
 
 public class PhotographyBooking extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photography_booking);
     }
+
+
 
     public void sendToExtend(View view) {
         Intent intent = new Intent(this, ExtendPhotography.class);
@@ -22,7 +26,7 @@ public class PhotographyBooking extends AppCompatActivity {
     }
 
     public void sendToBook(View view) {
-        Intent intent = new Intent(this, Photography_first.class);
+        Intent intent = new Intent(this, Photography_second.class);
         Button button = (Button) findViewById(R.id.button2);
         startActivity(intent);
     }
