@@ -32,16 +32,13 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawerlayout;
     private ActionBarDrawerToggle mTroggle;
-    private List<Slide> slideList = new ArrayList<>();
-    private ViewPager pager;
-    private PagerAdapter adaptor;
-    //private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Navigation drawer
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawer);
         mTroggle = new ActionBarDrawerToggle(this, mDrawerlayout, R.string.open, R.string.close);
         mTroggle = new ActionBarDrawerToggle(this, mDrawerlayout, R.string.open, R.string.close);
@@ -51,9 +48,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView=(NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
     }
 
+    //set troggle
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (mTroggle.onOptionsItemSelected(item)) {
@@ -68,17 +65,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
-
+    //Set navigation Item select
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == R.id.home){
-
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
         if(id==R.id.profile){
-            Toast.makeText(this,"Your Book is Extended.",Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, PhotographyBooking.class);
             startActivity(intent);
         }

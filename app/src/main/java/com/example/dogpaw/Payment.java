@@ -14,9 +14,6 @@ import android.widget.Toast;
 
 public class Payment extends AppCompatActivity {
 
-    EditText txtNo, txtIformat, txtType, amount;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +24,13 @@ public class Payment extends AppCompatActivity {
 
         final int number = intent.getIntExtra(Photography_second.EXTRA_NUMBER,0);
         float amount;
+        //If  no of dogs < 5, then amount will be number*500
         if(number < 5)
             amount = number * 500;
+            //If  no of dogs >= 5, then amount will be number*450
         else
             amount = number * 450;
+        //If amount is >= 2000 then will give a discount
         if(amount >= 2000){
             float discount = amount * 5/100;
             amount = amount - discount;
