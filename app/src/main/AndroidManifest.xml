@@ -30,47 +30,23 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity4"
-            android:label="@string/title_activity_maps4">
-
-        </activity>
+            android:name=".DriversMapActivity"
+            android:label="@string/title_activity_drivers_map"></activity>
         <activity
-            android:name=".MapsActivity3"
-            android:label="@string/title_activity_maps3" >
-
-        </activity>
-        <activity
-            android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2" >
-
-        </activity>
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
-
-        </activity>
-        <activity android:name=".MainActivity5"/>
-
-        <activity android:name=".MainActivity4" >
-
-
-        </activity>
-        <activity android:name=".MainActivity3" >
-
-
-        </activity>
-        <activity android:name=".MainActivity2">
-
-
-    </activity>
+            android:name=".CustomersMapActivity"
+            android:label="@string/title_activity_customers_map" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".DriverLoginRegisterActivity" />
+        <activity android:name=".CustomerLoginRegisterActivity" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".Photography_first" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    </activity>
+        </activity>
     </application>
 
 </manifest>

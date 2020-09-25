@@ -17,6 +17,8 @@
     <string name="driver_register_phoneno">0772345678</string>
     <string name="driver_register_vehicle_type">SUZUKI CELERIO</string>
     <string name="driver_register_email">amaraweera34@gmail.com</string>
+    <string name="title_activity_customers_map">Map</string>
+    <string name="title_activity_drivers_map">Map</string>
 
 
 </resources>

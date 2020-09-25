@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMainActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
     }
 }
