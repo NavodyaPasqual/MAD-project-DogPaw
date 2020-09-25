@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/blue"
         android:text="Settings"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -47,7 +47,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/driver_setting_btn"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/blue"
         android:text="Logout"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -58,7 +58,7 @@
 
     <RelativeLayout
         android:id="@+id/displayinfo2"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/blue"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

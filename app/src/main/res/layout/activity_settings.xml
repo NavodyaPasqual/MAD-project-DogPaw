@@ -16,7 +16,7 @@
             android:id="@+id/toolbarsettings"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/colorPrimary">
+            android:background="@color/blue">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -79,34 +79,55 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" Your Name"
-        android:layout_below="@+id/changepicbtn"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="15dp">
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        >
     </EditText>
     <EditText
         android:id="@+id/phoneno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" your Phone Number"
-        android:inputType="number"
-        android:layout_below="@+id/name"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="15dp">
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        >
     </EditText>
 
     <EditText
         android:id="@+id/drivercartype"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" Vehicle type"
-        android:layout_below="@+id/phoneno"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="15dp"
-        android:visibility="gone"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Vehical Type"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" >
         >
     </EditText>
 
