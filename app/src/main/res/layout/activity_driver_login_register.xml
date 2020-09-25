@@ -29,7 +29,7 @@
         android:layout_marginTop="280dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Email"
+        android:hint="@string/driver_Email"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/black"
@@ -45,26 +45,27 @@
         android:layout_marginTop="340dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Password"
+        android:hint="@string/driver_login_password"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/login_driver_btn"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/driver_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="13dp"
         android:background="@drawable/buttons"
-        android:text="Login"
+        android:text="@string/login_driver_btn"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textSize="24sp"
-        android:layout_marginTop="13dp"
-        android:layout_below="@+id/driver_password"
-        android:layout_centerHorizontal="true" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/driver_register_link"
@@ -80,17 +81,15 @@
         android:textSize="16sp" />
 
 
-
-
     <Button
         android:id="@+id/register_driver_btn"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_below="@+id/driver_register_link"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="0dp"
         android:background="@drawable/buttons"
-        android:text="Register"
+        android:text="@string/register_driver_btn"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
 </RelativeLayout>

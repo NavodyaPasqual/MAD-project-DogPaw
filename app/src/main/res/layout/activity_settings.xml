@@ -75,6 +75,7 @@
         android:textColor="@color/colorAccent"
         >
     </TextView>
+
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
@@ -84,15 +85,14 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Name"
+        android:hint="@string/name"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold"
-        >
-    </EditText>
+        android:textStyle="bold"></EditText>
+
     <EditText
         android:id="@+id/phoneno"
         android:layout_width="match_parent"
@@ -102,15 +102,13 @@
         android:layout_marginTop="130dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Phone Number"
+        android:hint="@string/phoneno"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold"
-        >
-    </EditText>
+        android:textStyle="bold"></EditText>
 
     <EditText
         android:id="@+id/drivercartype"
@@ -121,13 +119,13 @@
         android:layout_marginTop="210dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
-        android:hint="Vehical Type"
+        android:hint="@string/drivercartype"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold" >
+        android:textStyle="bold">
         >
     </EditText>
 

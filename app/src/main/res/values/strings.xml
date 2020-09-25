@@ -2,19 +2,24 @@
     <string name="app_name">DogPaw</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="title_activity_maps2">Map</string>
-    <string name="title_activity_maps3">Map</string>
-    <string name="title_activity_maps4">Map</string>
-    <string name="driver_name">name</string>
-    <string name="driver_phoneno">Phone number</string>
-    <string name="driver_vehicle_type">Vehicle Type</string>
     <string name="driver_Email">Email</string>
-    <string name="driver_password">Password</string>
     <string name="driver_login_email">Email</string>
     <string name="driver_login_password">Password</string>
     <string name="title_activity_customers_map">Map</string>
     <string name="title_activity_drivers_map">Map</string>
+    <string name="customer_email">Email</string>
+    <string name="customer_password">Password</string>
+    <string name="driver_email">Email</string>
+    <string name="name">Name</string>
+    <string name="phoneno">Phone Number</string>
+    <string name="drivercartype">Vehical Type</string>
+    <string name="customer_welcome_btn">I\'m a Customer</string>
+    <string name="driver_welcome_btn">I\'m a Driver</string>
+    <string name="customer_login_btn">Login</string>
+    <string name="customer_register_btn">Register</string>
+    <string name="login_driver_btn">Login</string>
+    <string name="register_driver_btn">Register</string>
+    <string name="customer_hail_taxi_btn">Call a CAB</string>
 
 
 </resources>
