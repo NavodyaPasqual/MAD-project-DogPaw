@@ -20,8 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-    private Button button1;
+
     private DrawerLayout mDrawerlayout;
     private ActionBarDrawerToggle mTroggle;
     private List<Slide> slideList = new ArrayList<>();
@@ -33,22 +32,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button = findViewById(R.id.button19);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMA6();
-            }
-        });
-
-        button1 = findViewById(R.id.button20);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMA2();
-            }
-        });
 
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawer);
         mTroggle = new ActionBarDrawerToggle(this,mDrawerlayout,R.string.open,R.string.close);
@@ -69,13 +52,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openMA6(){
-        Intent intent = new Intent(this, MA6.class);
-        startActivity(intent);
-    }
-
-    public void openMA2(){
-        Intent intent = new Intent(this, MA2.class);
-        startActivity(intent);
-    }
 }

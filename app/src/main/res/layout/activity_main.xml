@@ -39,17 +39,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/logo" />
 
-            <Button
-                android:id="@+id/button20"
-                android:layout_width="46dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="16dp"
-                android:background="@null"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintHorizontal_bias="0.948"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
-
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="408dp"
@@ -199,16 +188,6 @@
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <Button
-                android:background="@null"
-                android:id="@+id/button19"
-                android:layout_width="46dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintHorizontal_bias="0.043"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
