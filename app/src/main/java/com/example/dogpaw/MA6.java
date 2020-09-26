@@ -36,7 +36,7 @@ public class MA6 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMA1();
+               openMA1();
 
                 databaseReference = FirebaseDatabase.getInstance().getReference().child("User");
 
@@ -67,7 +67,7 @@ public class MA6 extends AppCompatActivity {
 
                     //Insert data to the database
                     //databaseReference.push().setValue(user);
-                    databaseReference.child("user2").setValue(user);
+                    databaseReference.child("user3").setValue(user);
 
                     //feedback to the user
                     Toast.makeText(getApplicationContext(),"Registration Succesfull", Toast.LENGTH_SHORT).show();

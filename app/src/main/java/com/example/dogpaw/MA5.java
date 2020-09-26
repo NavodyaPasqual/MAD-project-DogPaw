@@ -44,7 +44,7 @@ public class MA5 extends AppCompatActivity {
         buttonShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                    DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("user3");
                     readRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -77,7 +77,7 @@ public class MA5 extends AppCompatActivity {
                 updRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("user1")){
+                        if (dataSnapshot.hasChild("user3")){
                             try{
                                 user.setFullName(fullName.getText().toString().trim());
                                 user.setEmail(email.getText().toString().trim());
@@ -85,7 +85,7 @@ public class MA5 extends AppCompatActivity {
                                 user.setUserName(userName.getText().toString().trim());
                                 user.setPassword(password.getText().toString().trim());
 
-                                databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                                databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user3");
                                 databaseReference.setValue(user);
                                 clearControls();
 
@@ -117,8 +117,8 @@ public class MA5 extends AppCompatActivity {
                 delRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("user1")){
-                            databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                        if (dataSnapshot.hasChild("user3")){
+                            databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user3");
                             databaseReference.removeValue();
                             clearControls();
 
