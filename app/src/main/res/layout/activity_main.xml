@@ -9,17 +9,7 @@
     android:background="@drawable/photo_background"
     tools:ignore="InvalidId">
 
-    <com.google.android.material.navigation.NavigationView
-        app:headerLayout="@layout/header"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        app:itemTextColor="@color/darkGray"
-        app:itemIconTint="@color/darkGray"
-        app:menu="@menu/drawermenu"
-        android:layout_gravity="start">
 
-    </com.google.android.material.navigation.NavigationView>
     <ScrollView
         android:layout_width="100dp"
         android:layout_height="200dp">
@@ -165,7 +155,7 @@
                             android:layout_below="@id/airplane"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
-                            android:text="Photography"
+                            android:text="Dog Photography"
                             android:textSize="24sp" />
 
 
@@ -183,6 +173,7 @@
                             android:layout_width="366dp"
                             android:layout_height="179dp"
                             android:alpha="0"
+                            android:onClick="sendToPhotography"
                             android:text="Button" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -190,4 +181,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/darkGray"
+        app:itemIconTint="@color/darkGray"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

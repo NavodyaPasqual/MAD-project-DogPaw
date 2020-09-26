@@ -38,8 +38,14 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".DriverLoginRegisterActivity" />
         <activity android:name=".CustomerLoginRegisterActivity" />
+
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".Photography_first" />
+        <activity android:name=".SplashSreen"></activity>
+        <activity android:name=".ExtendPhotography" />
+        <activity android:name=".PhotographyBooking" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Photography_second" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

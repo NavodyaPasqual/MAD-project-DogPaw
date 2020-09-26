@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "481871435098",
+    "firebase_url": "https://taxiservice-f01ee.firebaseio.com",
+    "project_id": "taxiservice-f01ee",
+    "storage_bucket": "taxiservice-f01ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481871435098:android:89cd89939e6f5527dacf63",
+        "android_client_info": {
+          "package_name": "com.example.dogpaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481871435098-d521288lkpbla9r35fob39l5a7t7bi12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dogpaw",
+            "certificate_hash": "b142b3f80a19929b053635ea8c7275920673589a"
+          }
+        },
+        {
+          "client_id": "481871435098-b4dmcjui76ffu9skll0djc2p67162m79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhAs0kYzJH1waQSfo4F_EtJOIz1LVbpms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481871435098-b4dmcjui76ffu9skll0djc2p67162m79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
