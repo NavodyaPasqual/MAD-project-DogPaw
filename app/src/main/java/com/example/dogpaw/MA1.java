@@ -23,7 +23,7 @@ public class MA1 extends AppCompatActivity {
         button = findViewById(R.id.button6);
         button.setOnClickListener(new View.OnClickListener() {
 
-            DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("cus1");
+            DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("user2");
 
             @Override
             public void onClick(View view) {

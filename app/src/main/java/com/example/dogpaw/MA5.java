@@ -44,27 +44,27 @@ public class MA5 extends AppCompatActivity {
         buttonShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
-                readRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChildren()){
-                            fullName.setText(dataSnapshot.child("fullName").getValue().toString());
-                            email.setText(dataSnapshot.child("email").getValue().toString());
-                            pNumber.setText(dataSnapshot.child("pNumber").getValue().toString());
-                            userName.setText(dataSnapshot.child("userName").getValue().toString());
-                            password.setText(dataSnapshot.child("password").getValue().toString());
+                    DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("User").child("user2");
+                    readRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.hasChildren()){
+                                fullName.setText(dataSnapshot.child("fullName").getValue().toString());
+                                email.setText(dataSnapshot.child("email").getValue().toString());
+                                pNumber.setText(dataSnapshot.child("pNumber").getValue().toString());
+                                userName.setText(dataSnapshot.child("userName").getValue().toString());
+                                password.setText(dataSnapshot.child("password").getValue().toString());
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(), "No source to display", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else{
-                            Toast.makeText(getApplicationContext(), "No source to display", Toast.LENGTH_SHORT).show();
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
                         }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
+                    });
 
 
             }
@@ -77,7 +77,7 @@ public class MA5 extends AppCompatActivity {
                 updRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("user1")){
+                        if (dataSnapshot.hasChild("user2")){
                             try{
                                 user.setFullName(fullName.getText().toString().trim());
                                 user.setEmail(email.getText().toString().trim());
@@ -85,7 +85,7 @@ public class MA5 extends AppCompatActivity {
                                 user.setUserName(userName.getText().toString().trim());
                                 user.setPassword(password.getText().toString().trim());
 
-                                databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                                databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user2");
                                 databaseReference.setValue(user);
                                 clearControls();
 
@@ -117,8 +117,8 @@ public class MA5 extends AppCompatActivity {
                 delRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("user1")){
-                            databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                        if (dataSnapshot.hasChild("user2")){
+                            databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user2");
                             databaseReference.removeValue();
                             clearControls();
 

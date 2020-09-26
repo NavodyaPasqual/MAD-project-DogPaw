@@ -2,12 +2,12 @@ package com.example.dogpaw;
 
 public class Admin {
 
-    private String adminName, adminUsername, adminPw;
+    private String adminName, adminEmail, adminPassword;
 
-    public Admin(String adminName, String adminUsername, String adminPw) {
+    public Admin(String adminName, String adminEmail, String adminPassword) {
         this.adminName = adminName;
-        this.adminUsername = adminUsername;
-        this.adminPw = adminPw;
+        this.adminEmail = adminEmail;
+        this.adminPassword = adminPassword;
     }
 
     public String getAdminName() {
@@ -19,21 +19,21 @@ public class Admin {
         this.adminName = adminName;
     }
 
-    public String getAdminUsername() {
+    public String getAdminEmail() {
 
-        return adminUsername;
+        return adminEmail;
     }
 
-    public void setAdminUsername(String adminUsername) {
+    public void setAdminEmail(String adminEmail) {
 
-        this.adminUsername = adminUsername;
+        this.adminEmail = adminEmail;
     }
 
-    public String getAdminPw() {
-        return adminPw;
+    public String getAdminPassword() {
+        return adminPassword;
     }
 
-    public void setAdminPw(String adminPw) {
-        this.adminPw = adminPw;
+    public void setAdminPassword(String adminPassword) {
+        this.adminPassword = adminPassword;
     }
 }

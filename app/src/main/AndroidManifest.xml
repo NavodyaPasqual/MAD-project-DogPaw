@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MA8"></activity>
         <activity android:name=".MA3" />
         <activity android:name=".MA4" />
         <activity android:name=".MA2">
 
         </activity>
         <activity android:name=".MA5" />
-        <activity android:name=".MA1"></activity>
+        <activity android:name=".MA1" />
         <activity android:name=".MA6">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".Photography_first" />
         <activity android:name=".MainActivity" />
