@@ -15,7 +15,8 @@
         <activity android:name=".RequestActivity"/>
         <activity android:name=".Payment" />
         <activity android:name=".Photography_second" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".DetailsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
