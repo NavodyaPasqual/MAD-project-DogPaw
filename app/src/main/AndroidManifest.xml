@@ -12,6 +12,7 @@
         <activity android:name=".SplashSreen"></activity>
         <activity android:name=".ExtendPhotography" />
         <activity android:name=".PhotographyBooking" />
+        <activity android:name=".RequestActivity"/>
         <activity android:name=".Payment" />
         <activity android:name=".Photography_second" />
         <activity android:name=".MainActivity">
