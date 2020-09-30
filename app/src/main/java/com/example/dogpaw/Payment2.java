@@ -18,6 +18,7 @@ public class Payment2 extends AppCompatActivity {
         final TextView result = (TextView) findViewById(R.id.editText1);
         result.setEnabled(false);
 
+        //Calculation of Daycare
         final int no = intent.getIntExtra(DetailsActivity.EXTRA_NUMBER,0);
         final int days = intent.getIntExtra(DetailsActivity.EXTRA_DAYS,0);
         float amount;
