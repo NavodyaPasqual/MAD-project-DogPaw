@@ -34,6 +34,28 @@
     <string name="n_photography_form_forth">Type of phto needed to be taken*</string>
     <string name="n_photography_fifth">Most preffered time of day*</string>
     <string name="n_photography_six">Final image format*</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="hintFname">Full Name</string>
+    <string name="hintLname">Last Name</string>
+    <string name="hintPhone">Phone</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintSubject">Subject</string>
+    <string name="hintMsg">Your Message</string>
+    <string name="SentB">SEND</string>
+    <string name="special_request">You Have A Special  Request ?</string>
+    <string name="req_quote">Request A Quote</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="getService">Daycare Service</string>
+    <string name="hintName">Owner name</string>
+    <string name="hintDogs">How many dogs need to taken care of ?</string>
+    <string name="hintBreed">Which breed it is ?</string>
+    <string name="hintSize">What is the size of your dog ?</string>
+    <string name="hintSitter">Anything else the sitter will need to know ?</string>
+    <string name="hintDays">Number of days required ?</string>
+    <string name="SaveB">SAVE</string>
+    <string name="showB">View</string>
+    <string name="UpdB">Update</string>
+    <string name="DelB">Delete</string>
 
 
 </resources>

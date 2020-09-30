@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
+    public void sendToDayCareService(View view) {
+        Intent intent = new Intent(this, QuoteActivity.class);
+        Button button = (Button) findViewById(R.id.button5);
+        startActivity(intent);
+    }
+
     public void sendToPhotography(View view) {
         Intent intent = new Intent(this, PhotographyBooking.class);
         Button button = (Button) findViewById(R.id.button6);
@@ -75,15 +81,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         }
         if(id==R.id.profile){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+            Intent intent = new Intent(this, MA5.class);
             startActivity(intent);
         }
-        if(id==R.id.aLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+        if(id==R.id.registration){
+            Intent intent = new Intent(this, MA6.class);
             startActivity(intent);
         }
         if(id == R.id.uLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+            Intent intent = new Intent(this, CustomerLoginRegisterActivity.class);
             startActivity(intent);
         }
         return false;

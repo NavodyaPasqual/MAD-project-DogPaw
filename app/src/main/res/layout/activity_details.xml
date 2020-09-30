@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
+    tools:context=".RequestActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:text="@string/getService"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etinputFname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etinputFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputLname"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintName"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputPhone"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintDogs"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputFname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputEmail"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hintBreed"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etinputLname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputSubject"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintSize"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputPhone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputMsg"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintSitter"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butSend"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintDays"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputSubject"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/butSave"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/SaveB"
+        android:textColor="#FDFCFC"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butShow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/butShow"
+        android:layout_width="75dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/showB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butUpdate"
+        app:layout_constraintStart_toEndOf="@+id/butSave" />
+
+    <Button
+        android:id="@+id/butUpdate"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/UpdB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butDelete"
+        app:layout_constraintStart_toEndOf="@+id/butShow" />
+
+    <Button
+        android:id="@+id/butDelete"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/DelB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/butUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/etinputMsg"
+        app:layout_constraintVertical_bias="0.796" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

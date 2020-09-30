@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/photo_background"
     tools:ignore="InvalidId">
 
 
@@ -57,7 +56,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/bus"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="-7dp"
+                            android:layout_marginTop="3dp"
                             android:text="Taxi Service"
                             android:textSize="24sp" />
 
@@ -107,23 +106,30 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/train"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0.5dp"
                             android:text="Day Care Service"
                             android:textSize="24sp" />
 
                         <ImageView
                             android:id="@+id/train"
-                            android:layout_width="349dp"
-                            android:layout_height="132dp"
-                            android:layout_centerHorizontal="true"
+                            android:layout_width="370dp"
+                            android:layout_height="135dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="3dp"
                             app:srcCompat="@drawable/dog_takecare" />
 
                         <Button
                             android:id="@+id/button5"
                             android:layout_width="366dp"
                             android:layout_height="179dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginBottom="0dp"
                             android:alpha="0"
+                            android:onClick="sendToDayCareService"
                             android:text="Button" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -154,7 +160,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/airplane"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="3dp"
                             android:text="Dog Photography"
                             android:textSize="24sp" />
 
@@ -175,6 +181,7 @@
                             android:alpha="0"
                             android:onClick="sendToPhotography"
                             android:text="Button" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>

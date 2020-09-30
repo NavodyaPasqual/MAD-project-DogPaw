@@ -73,8 +73,8 @@
         android:textStyle="bold"
         android:layout_marginTop="5dp"
         android:textColor="@color/colorAccent"
-        >
-    </TextView>
+        />
+
 
     <EditText
         android:id="@+id/name"
@@ -91,7 +91,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold"></EditText>
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/phoneno"
@@ -108,7 +108,9 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold"></EditText>
+        android:textStyle="bold"/>
+
+
 
     <EditText
         android:id="@+id/drivercartype"
@@ -125,8 +127,10 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="17sp"
-        android:textStyle="bold">
-        >
-    </EditText>
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+
 
 </RelativeLayout>
