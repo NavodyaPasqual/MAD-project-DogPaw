@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
+    android:background="#31C18A5D"
     tools:context=".QuoteActivity">
 
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="306dp"
+        android:layout_width="330dp"
         android:layout_height="222dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="92dp"
-        android:background="@color/colorPrimary"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="96dp"
+        android:background="#486A341E"
+        android:fontFamily="@font/halant"
         android:freezesText="false"
         android:text="@string/special_request"
         android:textAlignment="center"
         android:textAllCaps="true"
+        android:textColorHint="@color/black"
         android:textDirection="locale"
         android:textIsSelectable="false"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -58,8 +61,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="126dp"
-        android:layout_height="22dp"
+        android:layout_width="124dp"
+        android:layout_height="33dp"
         android:text="@string/follow_us"
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -69,7 +72,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 

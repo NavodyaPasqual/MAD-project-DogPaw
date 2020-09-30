@@ -17,6 +17,7 @@ tools:context=".CustomerLoginRegisterActivity"
     android:layout_marginTop="197dp"
     android:layout_marginBottom="451dp"
     android:text="Customer Login"
+    android:textAlignment="center"
     android:textColor="@color/blue"
     android:textSize="24dp"
     android:textStyle="bold" />
@@ -38,21 +39,7 @@ tools:context=".CustomerLoginRegisterActivity"
         android:textStyle="bold" />
 
 
-    <EditText
-        android:id="@+id/customer_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="340dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/input_design"
-        android:hint="@string/customer_password"
-        android:inputType="text"
-        android:padding="12dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+
 
     <Button
         android:id="@+id/customer_login_btn"
@@ -92,4 +79,24 @@ tools:context=".CustomerLoginRegisterActivity"
         android:text="@string/customer_register_btn"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/customer_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/customer_password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+
 </RelativeLayout>

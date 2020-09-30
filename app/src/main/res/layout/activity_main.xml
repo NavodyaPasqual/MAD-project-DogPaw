@@ -8,14 +8,13 @@
     tools:context=".MainActivity"
     tools:ignore="InvalidId">
 
-
     <ScrollView
         android:layout_width="100dp"
         android:layout_height="200dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF">
+            android:background="#31C18A5D">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -42,7 +41,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -57,6 +56,7 @@
                             android:layout_below="@id/bus"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="3dp"
+                            android:fontFamily="@font/chela_one"
                             android:text="Taxi Service"
                             android:textSize="24sp" />
 
@@ -93,7 +93,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -107,6 +107,7 @@
                             android:layout_below="@id/train"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="0.5dp"
+                            android:fontFamily="@font/chela_one"
                             android:text="Day Care Service"
                             android:textSize="24sp" />
 
@@ -147,7 +148,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -161,6 +162,7 @@
                             android:layout_below="@id/airplane"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="3dp"
+                            android:fontFamily="@font/chela_one"
                             android:text="Dog Photography"
                             android:textSize="24sp" />
 
@@ -198,6 +200,5 @@
         app:itemIconTint="@color/darkGray"
         app:menu="@menu/drawermenu"
         android:layout_gravity="start">
-
     </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -17,6 +17,7 @@
         android:hint="@string/n_payment_header"
         android:textColorHint="#F5F5F5"
         android:textSize="32dp"
+        android:fontFamily="@font/alegreya_bold"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

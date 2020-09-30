@@ -17,6 +17,7 @@
         android:layout_marginTop="197dp"
         android:layout_marginBottom="451dp"
         android:text="Driver Login"
+ android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="30dp"
         android:textStyle="bold" />
@@ -46,7 +47,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/input_design"
         android:hint="@string/driver_login_password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
