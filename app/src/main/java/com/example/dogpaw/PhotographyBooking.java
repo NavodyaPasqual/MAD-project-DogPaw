@@ -1,44 +1,29 @@
 package com.example.dogpaw;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
-
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Slide;
 import android.view.MenuItem;
 import android.view.View;
-
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class PhotographyBooking extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
     private DrawerLayout mDrawerlayout;
     private ActionBarDrawerToggle mTroggle;
 
-    private List<Slide> slideList = new ArrayList<>();
-    private ViewPager pager;
-    private PagerAdapter adaptor;
-    private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_photography_booking);
 
         //Navigation drawer
         mDrawerlayout = (DrawerLayout) findViewById(R.id.drawer);
@@ -47,22 +32,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mDrawerlayout.addDrawerListener(mTroggle);
         mTroggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        button = (Button) findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity2();
-            }
-        });
-
         NavigationView navigationView=(NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
     }
 
     //set troggle
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (mTroggle.onOptionsItemSelected(item)) {
@@ -72,14 +47,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    public void openMainActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+    public void sendToExtend(View view) {
+        Intent intent = new Intent(this, ExtendPhotography.class);
+        Button button = (Button) findViewById(R.id.button1);
         startActivity(intent);
     }
 
-    public void sendToPhotography(View view) {
-        Intent intent = new Intent(this, PhotographyBooking.class);
-        Button button = (Button) findViewById(R.id.button6);
+    public void sendToBook(View view) {
+        Intent intent = new Intent(this, Photography_second.class);
+        Button button = (Button) findViewById(R.id.button2);
         startActivity(intent);
     }
 
@@ -88,10 +64,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == R.id.home){
+
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
         if(id==R.id.profile){
+            Toast.makeText(this,"Your Book is Extended.",Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, PhotographyBooking.class);
             startActivity(intent);
         }
@@ -105,5 +83,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         return false;
     }
-
 }
