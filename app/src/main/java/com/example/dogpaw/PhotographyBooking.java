@@ -69,16 +69,17 @@ public class PhotographyBooking extends AppCompatActivity implements NavigationV
             startActivity(intent);
         }
         if(id==R.id.profile){
-            Toast.makeText(this,"Your Book is Extended.",Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, PhotographyBooking.class);
+
+            Intent intent = new Intent(this, MA5.class);
             startActivity(intent);
         }
-        if(id==R.id.aLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+        if(id==R.id.registration){
+            Intent intent = new Intent(this, MA6.class);
             startActivity(intent);
         }
         if(id == R.id.uLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+            Intent intent = new Intent(this, CustomerLoginRegisterActivity.class);
+
             startActivity(intent);
         }
         return false;

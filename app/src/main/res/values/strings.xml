@@ -3,6 +3,7 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
 
+
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_maps2">Map</string>
     <string name="title_activity_maps3">Map</string>
@@ -10,19 +11,27 @@
     <string name="driver_name">name</string>
     <string name="driver_phoneno">Phone number</string>
     <string name="driver_vehicle_type">Vehicle Type</string>
+
     <string name="driver_Email">Email</string>
-    <string name="driver_password">Password</string>
     <string name="driver_login_email">Email</string>
     <string name="driver_login_password">Password</string>
-    <string name="driver_register_name">K.P.W.Amaraweera</string>
-    <string name="driver_register_phoneno">0772345678</string>
-    <string name="driver_register_vehicle_type">SUZUKI CELERIO</string>
-    <string name="driver_register_email">amaraweera34@gmail.com</string>
-
-
-
+    <string name="title_activity_customers_map">Map</string>
+    <string name="title_activity_drivers_map">Map</string>
+    <string name="customer_email">Email</string>
+    <string name="customer_password">Password</string>
+    <string name="driver_email">Email</string>
+    <string name="name">Name</string>
+    <string name="phoneno">Phone Number</string>
+    <string name="drivercartype">Vehical Type</string>
+    <string name="customer_welcome_btn">I\'m a Customer</string>
+    <string name="driver_welcome_btn">I\'m a Driver</string>
+    <string name="customer_login_btn">Login</string>
+    <string name="customer_register_btn">Register</string>
+    <string name="login_driver_btn">Login</string>
+    <string name="register_driver_btn">Register</string>
+    <string name="customer_hail_taxi_btn">Call a CAB</string>
     <string name="n_value_type">Rs.</string>
-    <string name="n_payment_massege">"This payment is calculated according to number of dogs you needed to photographed. Amount acccording to final photo format type and number of photoes you need to be taken will added to the total payment. Please cash pay your payment on your booked date. "</string>
+    <string name="n_payment_massege">This payment is calculated according to number of dogs you needed to photographed. Amount acccording to final photo format type and number of photoes you need to be taken will added to the total payment. Please cash pay your payment on your booked date.</string>
     <string name="n_photography_first_titls">Dog Photography</string>
     <string name="n_photography_first_details">Select a Package</string>
     <string name="n_dog_family">Dog and Family Outside Photographs</string>
@@ -35,5 +44,31 @@
     <string name="n_photography_form_forth">Type of phto needed to be taken*</string>
     <string name="n_photography_fifth">Most preffered time of day*</string>
     <string name="n_photography_six">Final image format*</string>
+    <string name="hintFname">Full Name</string>
+    <string name="hintLname">Last Name</string>
+    <string name="hintPhone">Phone</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintSubject">Subject</string>
+    <string name="hintMsg">Your Message</string>
+    <string name="SentB">SEND</string>
+    <string name="special_request">You Have A Special  Request ?</string>
+    <string name="req_quote">Request A Quote</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="getService">Daycare Service</string>
+    <string name="hintName">Owner name</string>
+    <string name="hintDogs">How many dogs need to taken care of ?</string>
+    <string name="hintBreed">Which breed it is ?</string>
+    <string name="hintSize">What is the size of your dog ?</string>
+    <string name="hintSitter">Anything else the sitter will need to know ?</string>
+    <string name="hintDays">Number of days required ?</string>
+    <string name="showB">View</string>
+    <string name="DelB">Delete</string>
+    <string name="contact_us">Get In Touch</string>
+    <string name="SaveB">REQUEST</string>
+    <string name="UpdB">Update request</string>
+
+
+
+
 
 </resources>

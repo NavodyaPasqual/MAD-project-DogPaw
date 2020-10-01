@@ -5,7 +5,6 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/photo_background"
     tools:context=".MainActivity"
     tools:ignore="InvalidId">
 
@@ -16,7 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF">
+            android:background="#31C18A5D">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -43,7 +42,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -56,7 +55,10 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/bus"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="-3dp"
+
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/chela_one"
+
                             android:text="Taxi Service"
                             android:textColor="#000000"
                             android:textSize="24sp" />
@@ -96,7 +98,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -109,23 +111,31 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/train"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="4dp"
+                            android:layout_marginTop="0.5dp"
+                            android:fontFamily="@font/chela_one"
                             android:text="Day Care Service"
                             android:textColor="#000000"
                             android:textSize="24sp" />
 
                         <ImageView
                             android:id="@+id/train"
-                            android:layout_width="349dp"
-                            android:layout_height="132dp"
-                            android:layout_centerHorizontal="true"
+                            android:layout_width="370dp"
+                            android:layout_height="135dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="3dp"
                             app:srcCompat="@drawable/dog_takecare" />
 
                         <Button
                             android:id="@+id/button5"
-                            android:layout_width="370dp"
-                            android:layout_height="177dp"
+
+                            android:layout_width="366dp"
+                            android:layout_height="179dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginBottom="0dp"
                             android:alpha="0"
+                            android:onClick="sendToDayCareService"
                             android:text="Button" />
 
                     </RelativeLayout>
@@ -145,7 +155,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="6dp"
                     android:layout_weight="1">
 
                     <RelativeLayout
@@ -159,9 +169,9 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/airplane"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="1dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/chela_one"
                             android:text="Dog Photography"
-                            android:textColor="#000000"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -189,15 +199,15 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
+
+        app:headerLayout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
         android:background="@color/white"
-        app:headerLayout="@layout/header"
-        app:itemIconTint="@color/darkGray"
         app:itemTextColor="@color/darkGray"
-        app:menu="@menu/drawermenu">
-
+        app:itemIconTint="@color/darkGray"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
     </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

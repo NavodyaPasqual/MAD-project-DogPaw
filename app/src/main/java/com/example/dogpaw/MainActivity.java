@@ -9,6 +9,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 
+import android.content.ClipData;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,22 +20,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mDrawerlayout;
     private ActionBarDrawerToggle mTroggle;
 
-    private List<Slide> slideList = new ArrayList<>();
-    private ViewPager pager;
-    private PagerAdapter adaptor;
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +67,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     public void openMainActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, WelcomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void sendToDayCareService(View view) {
+        Intent intent = new Intent(this, QuoteActivity.class);
+        Button button = (Button) findViewById(R.id.button5);
         startActivity(intent);
     }
 
@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
-    //Set navigation Item select
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
@@ -92,18 +93,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         }
         if(id==R.id.profile){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+            Intent intent = new Intent(this, MA5.class);
             startActivity(intent);
         }
-        if(id==R.id.aLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+        if(id==R.id.registration){
+            Intent intent = new Intent(this, MA6.class);
             startActivity(intent);
         }
         if(id == R.id.uLogin){
-            Intent intent = new Intent(this, PhotographyBooking.class);
+            Intent intent = new Intent(this, CustomerLoginRegisterActivity.class);
+
             startActivity(intent);
         }
         return false;
     }
-
 }

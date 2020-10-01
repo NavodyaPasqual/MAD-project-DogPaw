@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
+    tools:context=".RequestActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="@string/contact_us"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etinputLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputPhone"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hintLname"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/etinputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputEmail"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hintPhone"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etinputLname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputSubject"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintEmail"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputPhone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputMsg"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintSubject"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butSend"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintMsg"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputSubject"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/butSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/SentB"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etinputMsg"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="398dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/contactus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,8 @@
             android:layout_marginTop="8dp"
             android:background="#12070000"
             android:ems="10"
-            android:inputType="textPersonName"
+
+            android:inputType="number"
             android:paddingStart="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1" />
@@ -249,7 +250,9 @@
             android:layout_marginTop="8dp"
             android:background="#12070000"
             android:ems="10"
-            android:inputType="textPersonName"
+
+            android:inputType="date|number"
+
             android:paddingStart="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />

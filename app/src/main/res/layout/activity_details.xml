@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
+    tools:context=".RequestActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:text="@string/getService"
+        android:textAlignment="center"
+        android:fontFamily="@font/alegreya_bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etinputFname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etinputFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputLname"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintName"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputPhone"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintDogs"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputFname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputEmail"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hintBreed"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etinputLname"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputSubject"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintSize"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputPhone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinputMsg"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintSitter"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etinputMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butSend"
+        android:layout_marginTop="60dp"
+        android:hint="@string/hintDays"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/etinputSubject"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/butSave"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="200dp"
+        android:background="#511604"
+        android:textColor="#FFFFFF"
+        android:text="@string/SaveB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etinputMsg" />
+
+    <Button
+        android:id="@+id/butShow"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:background="#92D6CCCC"
+        android:text="@string/showB"
+        android:textColor="#511604"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/butSave" />
+
+    <Button
+        android:id="@+id/butUpdate"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="124dp"
+        android:background="#B5D6CCCC"
+        android:text="@string/UpdB"
+        android:textColor="#511604"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/butDelete"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:background="#511604"
+        android:text="@string/DelB"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/butUpdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
