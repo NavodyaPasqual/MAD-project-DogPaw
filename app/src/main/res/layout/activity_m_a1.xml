@@ -21,56 +21,63 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="149dp"
-        android:layout_height="42dp"
-        android:background="@android:color/holo_green_light"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:background="@color/colorPrimary"
         android:text="View Account"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Hello"
+        android:fontFamily="@font/chela_one"
+        android:text="Hi!"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.24" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="81dp"
-        android:layout_height="32dp"
-        android:background="@android:color/holo_green_light"
+        android:layout_width="89dp"
+        android:layout_height="33dp"
+        android:background="@color/colorPrimary"
         android:onClick="openLogin"
         android:text="Log in"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.179" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your account has been created"
+        android:layout_width="225dp"
+        android:layout_height="113dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="Your account has been successfully created"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368" />
+        app:layout_constraintVertical_bias="0.367" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

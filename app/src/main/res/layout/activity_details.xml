@@ -13,8 +13,9 @@
         android:layout_height="39dp"
         android:text="@string/getService"
         android:textAlignment="center"
+        android:fontFamily="@font/alegreya_bold"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/etinputFname"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,49 +108,57 @@
 
     <Button
         android:id="@+id/butSave"
-        android:layout_width="70dp"
-        android:layout_height="46dp"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="200dp"
+        android:background="#511604"
+        android:textColor="#FFFFFF"
         android:text="@string/SaveB"
-        android:textColor="#FDFCFC"
-        app:layout_constraintBaseline_toBaselineOf="@+id/butShow"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etinputMsg" />
 
     <Button
         android:id="@+id/butShow"
-        android:layout_width="75dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="28dp"
-        android:background="@android:color/holo_blue_dark"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:background="#92D6CCCC"
         android:text="@string/showB"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBaseline_toBaselineOf="@+id/butUpdate"
+        android:textColor="#511604"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/butSave" />
 
     <Button
         android:id="@+id/butUpdate"
-        android:layout_width="70dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="28dp"
-        android:background="@android:color/holo_blue_dark"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="124dp"
+        android:background="#B5D6CCCC"
         android:text="@string/UpdB"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBaseline_toBaselineOf="@+id/butDelete"
-        app:layout_constraintStart_toEndOf="@+id/butShow" />
+        android:textColor="#511604"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butSave"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/butDelete"
-        android:layout_width="70dp"
-        android:layout_height="46dp"
-        android:background="@android:color/holo_blue_dark"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:background="#511604"
         android:text="@string/DelB"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/butUpdate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toEndOf="@+id/butUpdate"
-        app:layout_constraintTop_toBottomOf="@+id/etinputMsg"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/butUpdate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

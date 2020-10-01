@@ -3,7 +3,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@drawable/register"
+android:background="@drawable/customerlogin"
 tools:context=".CustomerLoginRegisterActivity"
     >
 
@@ -51,7 +51,7 @@ tools:context=".CustomerLoginRegisterActivity"
         android:background="@drawable/buttons"
         android:text="@string/customer_login_btn"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorHint="@color/black"
         android:textSize="24sp" />
 
@@ -64,6 +64,7 @@ tools:context=".CustomerLoginRegisterActivity"
     android:layout_marginTop="520dp"
     android:text="Don't have an account?"
     android:textAlignment="center"
+    android:textStyle="bold"
     android:textAllCaps="false"
     android:textColor="@android:color/holo_red_dark"
     android:textSize="16sp" />

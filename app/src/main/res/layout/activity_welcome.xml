@@ -26,9 +26,8 @@
         android:padding="20dp"
         android:text="@string/customer_welcome_btn"
         android:textAllCaps="false"
-        android:textColor="#F7E61313"
-        android:textSize="36sp"
-        android:textStyle="bold"></Button>
+        android:textColor="@color/white"
+        android:textSize="30sp"></Button>
 
     <Button
         android:id="@+id/driver_welcome_btn"
@@ -46,9 +45,8 @@
         android:padding="20dp"
         android:text="@string/driver_welcome_btn"
         android:textAllCaps="false"
-        android:textColor="#F7E61313"
-        android:textSize="36sp"
-        android:textStyle="bold"></Button>
+        android:textColor="#F7FFFFFF"
+        android:textSize="30sp"></Button>
 
     <ImageView
         android:id="@+id/imageView2"

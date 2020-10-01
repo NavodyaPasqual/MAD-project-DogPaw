@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/driverlogin"
     tools:context=".DriverLoginRegisterActivity">
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginTop="197dp"
         android:layout_marginBottom="451dp"
         android:text="Driver Login"
- android:textAlignment="center"
+        android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="30dp"
         android:textStyle="bold" />
@@ -64,7 +64,7 @@
         android:background="@drawable/buttons"
         android:text="@string/login_driver_btn"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorHint="@color/black"
         android:textSize="24sp" />
 

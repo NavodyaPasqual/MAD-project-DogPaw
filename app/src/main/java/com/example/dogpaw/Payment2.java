@@ -21,21 +21,22 @@ public class Payment2 extends AppCompatActivity {
         //Calculation of Daycare
         final int no = intent.getIntExtra(DetailsActivity.EXTRA_NUMBER,0);
         final int days = intent.getIntExtra(DetailsActivity.EXTRA_DAYS,0);
-        float amount;
-        //If  no of dogs < 5, then amount will be number*500
-        //if(no < 5 && days < 3)
-          //  amount = days * no * 800;
-            //If  no of dogs >= 5, then amount will be number*450
-        //else
-            amount = days * no * 550;
-        //If amount is >= 2000 then will give a discount
-        if(amount >= 3500){
-            float discount = amount * 5/100;
-            amount = amount - discount;
-            result.setText(String.valueOf(amount));
+        float amount = 0;
+        //If  no of dogs < 5, and no of days <3, then amount will be days * no of dogs * 500
+        if(no < 4 ) {
+            if (days < 3)
+                amount = days * no * 500;
         }
+        //If  no of dogs >= 5, and no of days >=3 then amount will be number*450
         else
-            result.setText(String.valueOf(amount));
+            amount = days * no * 450;
+        //If amount is >= 4500 then will give a discount
+        if(amount >= 4500){
+            float discount;
+            discount = amount * 5/100;
+            amount = amount - discount;
+        }
+        result.setText(String.valueOf(amount));
     }
     public void sendBackToHome(View view) {
         Intent intent = new Intent(this, QuoteActivity.class);
