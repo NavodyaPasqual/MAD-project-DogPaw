@@ -114,11 +114,12 @@
         android:layout_marginTop="57dp"
         android:layout_marginBottom="200dp"
         android:background="#511604"
-        android:textColor="#FFFFFF"
         android:text="@string/SaveB"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etinputMsg" />
+        app:layout_constraintTop_toBottomOf="@+id/etinputMsg"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/butShow"
@@ -146,7 +147,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/butSave"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/butDelete"

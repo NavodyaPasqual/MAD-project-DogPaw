@@ -18,9 +18,20 @@ public class Payment2 extends AppCompatActivity {
         final TextView result = (TextView) findViewById(R.id.editText1);
         result.setEnabled(false);
 
-        //Calculation of Daycare
         final int no = intent.getIntExtra(DetailsActivity.EXTRA_NUMBER,0);
         final int days = intent.getIntExtra(DetailsActivity.EXTRA_DAYS,0);
+        float amount = calPayment(no, days);
+        result.setText(String.valueOf(amount));
+    }
+
+    public void sendBackToHome(View view) {
+        Intent intent = new Intent(this, QuoteActivity.class);
+        Button button = (Button) findViewById(R.id.button2);
+        startActivity(intent);
+    }
+
+    //Calculation of Daycare
+    public float calPayment(int no, int days){
         float amount = 0;
         //If  no of dogs < 5, and no of days <3, then amount will be days * no of dogs * 500
         if(no < 4 ) {
@@ -30,18 +41,12 @@ public class Payment2 extends AppCompatActivity {
         //If  no of dogs >= 5, and no of days >=3 then amount will be number*450
         else
             amount = days * no * 450;
-        //If amount is >= 4500 then will give a discount
-        if(amount >= 4500){
+        //If amount is >= 7500 then will give a 5% discount
+        if(amount >= 7500){
             float discount;
             discount = amount * 5/100;
             amount = amount - discount;
         }
-        result.setText(String.valueOf(amount));
+        return amount;
     }
-    public void sendBackToHome(View view) {
-        Intent intent = new Intent(this, QuoteActivity.class);
-        Button button = (Button) findViewById(R.id.button2);
-        startActivity(intent);
-    }
-
 }

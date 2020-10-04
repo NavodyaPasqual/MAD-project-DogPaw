@@ -66,9 +66,13 @@
     <string name="contact_us">Get In Touch</string>
     <string name="SaveB">REQUEST</string>
     <string name="UpdB">Update request</string>
-
-
-
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="greeting">Hi</string>
+    <string name="msg">Your account has been successfully created</string>
 
 
 </resources>

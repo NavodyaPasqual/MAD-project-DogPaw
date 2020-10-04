@@ -171,6 +171,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="3dp"
                             android:fontFamily="@font/chela_one"
+                            android:textColor="@color/black"
                             android:text="Dog Photography"
                             android:textSize="24sp" />
 
