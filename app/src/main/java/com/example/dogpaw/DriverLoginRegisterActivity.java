@@ -150,15 +150,13 @@ public class DriverLoginRegisterActivity extends AppCompatActivity
         {
             Toast.makeText(DriverLoginRegisterActivity.this, "Please Write Email", Toast.LENGTH_SHORT).show();
         }
-
         if (TextUtils.isEmpty(password))
         {
             Toast.makeText(DriverLoginRegisterActivity.this, "Please Write password", Toast.LENGTH_SHORT).show();
         }
         else
         {
-
-            loadingbar.setTitle("Driver Registration");
+           loadingbar.setTitle("Driver Registration");
             loadingbar.setMessage("Please Wait Registering Data");
             loadingbar.show();
 
@@ -178,8 +176,6 @@ public class DriverLoginRegisterActivity extends AppCompatActivity
 
                         Toast.makeText(DriverLoginRegisterActivity.this, "Driver Register successfully", Toast.LENGTH_SHORT).show();
                         loadingbar.dismiss();
-
-
                     }
 
                     else
